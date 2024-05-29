@@ -16,10 +16,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="w-[100vw]">
+    <html lang="en" className="w-[100vw] !scroll-smooth ">
       <body className={inter.className}>
-        <Navbar />
-        <div className="px-24">{children}</div>
+      
+        <div className="">{children}</div>
       </body>
     </html>
   );

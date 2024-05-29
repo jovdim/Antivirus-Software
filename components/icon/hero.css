@@ -1,0 +1,56 @@
+@keyframes infinite-rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  @keyframes infinite-rotate-reverse {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+
+
+
+
+
+
+
+
+
+  /* Apply the animation to the SVG group */
+  #innerThree {
+    
+    animation: infinite-rotate  10s linear infinite;
+    transform-origin: center; /* Adjust as needed */
+  }
+  #innerTwo {
+    
+    animation:  infinite-rotate-reverse 10s linear infinite;
+    transform-origin: center; /* Adjust as needed */
+  }
+  #outer{
+    animation:  infinite-rotate-reverse 10s linear infinite;
+    transform-origin: center; /* Adjust as needed */
+  }
+  #innerOne {
+    animation:  infinite-rotate 10s linear infinite;
+    transform-origin: center; /* Adjust as needed */
+  }
+
+ 
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
