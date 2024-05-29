@@ -260,8 +260,8 @@ export function Feature() {
           <p className="text-[18px] text-center">
           In addition to our powerful antivirus software, we offer a range of additional services to further safeguard your digital life. Explore our VPN, password manager, and parental controls to ensure comprehensive protection for you and your family.
           </p>
-          <div className="space-x-4 py-12 px-6 rounded-2xl flex   bg-[#F0F0F0]  justify-center items-center">
-            <div className="w-[25rem] border border-blue-600 shadow-lg bg-[#ECF9FF] text-black p-3 rounded-lg space-y-2 pb-4 ">
+          <div className="space-x-4 py-12 px-6 rounded-2xl flex   bg-[#91c8e498]  justify-center items-center">
+            <div className="w-[25rem] border border-blue-600 shadow-lg bg-[#E6FFFD] text-black p-3 rounded-lg space-y-2 pb-4 ">
               <div>
                 <img src="/real-time.svg" alt="icon" className="size-12 " />
               </div>
@@ -270,7 +270,7 @@ export function Feature() {
               Browse the web anonymously and protect your privacy.
               </p>
             </div>
-            <div className="w-[25rem] border border-blue-600 shadow-lg bg-[#ECF9FF] text-black p-3 rounded-lg space-y-2 pb-4 ">
+            <div className="w-[25rem] border border-blue-600 shadow-lg bg-[#E6FFFD] text-black p-3 rounded-lg space-y-2 pb-4 ">
               <div>
                 <img src="/udpate.svg" alt="icon" className="size-14 " />
               </div>
@@ -279,7 +279,7 @@ export function Feature() {
               Store and generate strong passwords for all your accounts.
               </p>
             </div>
-            <div className="w-[25rem] border border-blue-600 shadow-lg bg-[#ECF9FF] text-black p-3 rounded-lg space-y-2 pb-4">
+            <div className="w-[25rem] border border-blue-600 shadow-lg bg-[#E6FFFD] text-black p-3 rounded-lg space-y-2 pb-4">
               <div>
                 <img src="/firewall.svg" alt="icon" className="size-12" />
               </div>
