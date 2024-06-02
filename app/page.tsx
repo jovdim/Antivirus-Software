@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 export default function Main() {
   return (
     <main className="relative">
-      <TracingBeam className="    ">
+      <TracingBeam>
         <Home />
         <Feature />
         <Testimonial />

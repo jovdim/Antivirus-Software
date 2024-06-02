@@ -6,33 +6,29 @@ import Logo from "./logo";
 
 const content = [
   {
-    title: "Home",
-    url: "/",
-  },
-  {
     title: "Features",
-    url: "/features",
+    url: "#features",
   },
   {
     title: "Pricing",
-    url: "/pricing",
+    url: "#pricing",
   },
   {
     title: "Support",
-    url: "/support",
+    url: "#support",
+  },
+  {
+    title: "Testimonials",
+    url: "#testimonials",
   },
   {
     title: "More",
-    url: "/more",
+    url: "#faq",
   },
 ];
 
 export default function Navbar() {
-  const [activeLink, setActiveLink] = useState(null as number | null);
 
-  const handleClick = (index: number) => {
-    setActiveLink(index);
-  };
 
   return (
     <nav className=" z-50 text-white flex justify-between items-center h-[5rem] text-[1.1rem] py-12 border-b-[0.5px] border-white">
@@ -49,10 +45,7 @@ export default function Navbar() {
         {content.map((item, index) => (
           <Link key={item.title} href={item.url}>
             <span
-              className={`underline-animation pb-6 hover:text-[#b0c7e2]  ${
-                activeLink === index ? "active " : ""
-              }`}
-              onClick={() => handleClick(index)}
+              className="underline-animation pb-6 hover:text-[#b0c7e2] "
             >
               {item.title}
             </span>
@@ -60,10 +53,10 @@ export default function Navbar() {
         ))}
       </div>
       <div className="space-x-4">
-        <button className=" w-[7.5rem] bg-[#3559E0] hover:bg-[#191D88] transition-all p-4  rounded-lg text-white  border border-white">
+        <button className=" w-[7.5rem] bg-[#2d6eb9] hover:bg-[#191D88] transition-all  p-3  rounded-lg text-white  border-[0.5px] border-white">
           Demo
         </button>
-        <button className="w-[7.5rem] bg-[#3559E0] hover:bg-[#191D88] transition-all p-4 rounded-lg text-white  border border-white text-center">
+        <button className="w-[7.5rem] bg-[#2d6eb9] hover:bg-[#191D88] transition-all p-3 rounded-lg text-white  border-[0.5px] border-white text-center">
           Log in
         </button>
       </div>

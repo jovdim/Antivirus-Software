@@ -26,7 +26,7 @@ export default function Supporting() {
         </div>
         <div></div>
       </div>
-      <div className="pt-10 text-white flex flex-col  items-center w-[100vw] space-y-6 h-[40vh] bg-gradient-to-t to-[#3d66c7] from-[#336093cf] px-24 ">
+      <div className="pt-10 text-white flex flex-col  items-center w-[100vw] space-y-6 h-[44vh] bg-gradient-to-t to-[#3d66c7] from-[#336093cf] px-24 ">  
         <h1 className="text-[36px] font-bold">
           Stay Informed with Our Newsletter
         </h1>

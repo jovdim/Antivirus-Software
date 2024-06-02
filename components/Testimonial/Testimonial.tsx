@@ -5,9 +5,9 @@ import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
 export function Testimonial() {
   return (
-    <div className="bg-gradient-to-t to-[rgb(56,118,191)] from-[#336093cf] w-[100vw] pb-12">
+    <div id="testimonials" className="bg-gradient-to-t to-[rgb(56,118,191)] from-[#336093cf] w-[100vw] pb-12 -mt-10">
       <div>
-        <h1 className="text-white font-bold text-[2.5rem] text-center pt-6">
+        <h1 className="text-white font-bold text-[2.5rem] text-center pt-8">
           Satisfied Customers
         </h1>
         <p className="text-white text-[1.125rem] text-center">

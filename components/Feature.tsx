@@ -1,10 +1,14 @@
 import { PinContainer } from "./ui/3d-pin";
 import { Button } from "./ui/moving-border";
+import "../app/globals.css"
 
 export function Feature() {
   return (
-    <div className="text-white w-[100vw]">
-      <div className="flex justify-between items-center h-[90vh] bg-gradient-to-t to-[#3876BF] from-[#336093cf] px-24">
+    <div className="text-white w-[100vw] pb-10" id="features">
+    <div className="h-[93vh]  bg-gradient-to-t to-[#3876BF] from-[#336093cf] px-24"> 
+    <h2 className="py-16 font-bold text-center text-[24px]">Features</h2>
+    <div className="flex justify-between items-center ">
+   
         <div className="w-1/2 m-auto space-y-6  text-[18px] border p-12 rounded-lg ">
           <h1 className="font-bold text-[2.4rem] leading-[3rem] ">
             Download Restriction
@@ -23,7 +27,7 @@ export function Feature() {
                 >
                   Learn more
                 </Button>
-            <button className=" p-3 rounded-md transition-all hover:text-[#337CCF] ">
+            <button className=" p-3 rounded-md transition-all hover:text-blue-300 ">
               {"Sign Up >"}
             </button>
           </div>
@@ -31,31 +35,32 @@ export function Feature() {
         <div className="w-1/2 m-auto ">
           <PinContainer
           title="Download Restriction"
-          className="size-[25rem]">
+          className="size-[25rem] float">
             
           <img
             src="/restrict.svg"
             alt="icon"
-            className=" size-[25rem]"
+            className=" size-[25rem] float"
           />
           </PinContainer>
         </div>
+      </div>
       </div>
       {/* // Second Feature */}
       <div className="flex justify-between items-center h-[90vh] px-24 bg-gradient-to-t from-[#3876BF] to-[#336093cf]  ">
         <div className="w-1/2 m-auto">
         <PinContainer
-          title="Download Restriction"
-          className="size-[25rem]">
+          title="Universal Browser Extension"
+          className="size-[25rem] float">
           <img
             src="/extension.svg"
             alt="icon"
-            className=" size-[25rem]"
+            className=" size-[25rem] float"
           />
         </PinContainer>
         
         </div>
-        <div className="w-1/2 m-auto space-y-6  text-[18px] border p-12 rounded-lg">
+        <div className="w-1/2 m-auto space-y-6  text-[18px] border p-12 rounded-lg ml-20">
           <h1 className="font-bold text-[2.4rem] leading-[3.4rem] ">
             Universal Browser Extension
           </h1>
@@ -92,7 +97,7 @@ export function Feature() {
                 >
                   Learn more
                 </Button>
-            <button className=" p-3 rounded-md transition-all hover:text-[#337CCF] ">
+            <button className="p-3 rounded-md transition-all hover:text-blue-300 ">
               {"Sign Up >"}
             </button>
           </div>
@@ -100,7 +105,7 @@ export function Feature() {
       </div>
       {/* third feature */}
       <div className="flex justify-between items-center h-[90vh] px-24 bg-gradient-to-t to-[#3876BF] from-[#336093cf]">
-        <div className="w-1/2 m-auto space-y-6  text-[18px] border p-12 rounded-lg">
+        <div className="w-1/2 m-auto space-y-6  text-[18px] border p-12 rounded-lg mr-20">
           <h1 className="font-bold text-[2.4rem] leading-[3rem] ">
             Automatic Website Blocking
           </h1>
@@ -123,19 +128,19 @@ export function Feature() {
                 >
                   Learn more
                 </Button>
-            <button className=" p-3 rounded-md transition-all hover:text-[#337CCF] ">
+            <button className=" p-3 rounded-md transition-all hover:text-blue-300 ">
               {"Sign Up >"}
             </button>
           </div>
         </div>
         <div className="w-1/2 m-auto">
         <PinContainer
-          title="Download Restriction"
-          className="size-[25rem]">
+          title="Automatic Website Blocking"
+          className="size-[25rem] float">
           <img
             src="/unsecure.svg"
             alt="icon"
-            className=" size-[25rem]"
+            className=" size-[25rem] float "
           />
           </PinContainer>
         </div>
@@ -144,18 +149,18 @@ export function Feature() {
       <div className="flex justify-between items-center h-[90vh] px-24 bg-gradient-to-t from-[#3876BF] to-[#336093cf]">
         <div className="w-1/2 m-auto">
            <PinContainer
-          title="Download Restriction"
-          className="size-[25rem]">
+          title="Application and Message Scanning"
+          className="size-[25rem] float">
           <img
             src="/scanning.svg"
             alt="icon"
-            className=" size-[25rem]"
+            className=" size-[25rem] float"
           />
           </PinContainer>
         </div>
-        <div className="w-1/2 m-auto space-y-6  text-[18px] border p-12 rounded-lg">
+        <div className="w-1/2 m-auto space-y-6  text-[18px] border p-12 rounded-lg ml-28">
           <h1 className="font-bold text-[2.4rem] leading-[3.4rem] ">
-            Application and Message Scanning{" "}
+            Application and Message Scanning
           </h1>
           <p className="text-[18px] ">
             Scans your messaging apps and emails for phishing links and other
@@ -191,7 +196,7 @@ export function Feature() {
                 >
                   Learn more
                 </Button>
-            <button className=" p-3 rounded-md transition-all hover:text-[#337CCF] ">
+            <button className=" p-3 rounded-md transition-all hover:text-blue-300 ">
               {"Sign Up >"}
             </button>
           </div>
@@ -200,33 +205,32 @@ export function Feature() {
       {/* fitfth feature */}
       <div className="flex justify-between items-center h-[90vh] px-24 bg-gradient-to-t to-[#3876BF] from-[#336093cf]">
        
-        <div className="w-1/2 m-auto space-y-6  text-[18px] border p-12 rounded-lg">
+        <div className="w-1/2 m-auto space-y-6  text-[18px] border p-12 rounded-lg mr-20">
           <h1 className="font-bold text-[2.4rem] leading-[3.4rem] ">
           Custom Alert Ringtones
           </h1>
           <p className="text-[18px] ">
           Set up custom alert ringtones for virus detections and threats. Personalize your security notifications with customizable sounds, ensuring you're immediately aware of any potential risks to your device.
           </p>
+        
           <div className="space-x-4 pt-4 flex">
-            <div className="w-[20rem]  rounded-lg space-y-2 ">
-              <div>
-                <h3 className="font-bold text-[1.4rem]">Benefits</h3>
-              </div>
-              <p className="text-[16px] opacity-[0.8]">
-                Stay protected with automatic updates and enjoy enhanced
-                security and performance.
-              </p>
-            </div>
-            <div className="w-[20rem]  rounded-lg space-y-2 ">
-              <div>
-                <h3 className="font-bold text-[1.4rem]">Features</h3>
-              </div>
-              <p className="text-[16px] opacity-[0.8]">
-                Automatic updates ensure your software is always up-to-date and
-                protected against the latest threats.
-              </p>
-            </div>
-          </div>
+      <div className="w-[20rem] rounded-lg space-y-2">
+        <div>
+          <h3 className="font-bold text-[1.4rem]">Advantages</h3>
+        </div>
+        <p className="text-[16px] opacity-[0.8]">
+          Personalize your experience with unique sounds for different alerts, ensuring you always know the type of threat detected.
+        </p>
+      </div>
+      <div className="w-[20rem] rounded-lg space-y-2">
+        <div>
+          <h3 className="font-bold text-[1.4rem]">Highlights</h3>
+        </div>
+        <p className="text-[16px] opacity-[0.8]">
+          Customize your alerts with a variety of ringtones, making it easier to manage and respond to different security events quickly.
+        </p>
+      </div>
+    </div>
           <div className="space-x-4 pt-4 flex">
           <Button
                   duration={5000}
@@ -235,19 +239,19 @@ export function Feature() {
                 >
                   Learn more
                 </Button>
-            <button className=" p-3 rounded-md transition-all hover:text-[#337CCF] ">
+            <button className=" p-3 rounded-md transition-all hover:text-blue-300 ">
               {"Sign Up >"}
             </button>
           </div>
         </div>
         <div className="w-1/2 m-auto">
         <PinContainer
-          title="Download Restriction"
-          className="size-[25rem]">
+          title="Custom Alert Ringtones"
+          className="size-[25rem] float">
           <img
             src="/ringtone.svg"
             alt="icon"
-            className=" size-[25rem]"
+            className=" size-[25rem] float"
           />
           </PinContainer>
         </div>
@@ -263,7 +267,7 @@ export function Feature() {
           <div className="space-x-4 py-12 px-6 rounded-2xl flex   bg-[#91c8e498]  justify-center items-center">
             <div className="w-[25rem] border border-blue-600 shadow-lg bg-[#E6FFFD] text-black p-3 rounded-lg space-y-2 pb-4 ">
               <div>
-                <img src="/real-time.svg" alt="icon" className="size-12 " />
+                <img src="/vpn.svg" alt="icon" className="size-12 " />
               </div>
               <h3 className="font-bold text-[1.2rem]">Secure Your Connection with VPN</h3>
               <p className="text-[16px] opacity-[0.8]">
@@ -272,7 +276,7 @@ export function Feature() {
             </div>
             <div className="w-[25rem] border border-blue-600 shadow-lg bg-[#E6FFFD] text-black p-3 rounded-lg space-y-2 pb-4 ">
               <div>
-                <img src="/udpate.svg" alt="icon" className="size-14 " />
+                <img src="/password.svg" alt="icon" className="size-12 " />
               </div>
               <h3 className="font-bold text-[1.2rem]">Manage Your Passwords with Ease</h3>
               <p className="text-[16px] opacity-[0.8]">
@@ -281,7 +285,7 @@ export function Feature() {
             </div>
             <div className="w-[25rem] border border-blue-600 shadow-lg bg-[#E6FFFD] text-black p-3 rounded-lg space-y-2 pb-4">
               <div>
-                <img src="/firewall.svg" alt="icon" className="size-12" />
+                <img src="/children.svg" alt="icon" className="size-12" />
               </div>
               <h3 className="font-bold text-[1.2rem]">Protect Your Children Online</h3>
               <p className="text-[16px] opacity-[0.8]">
@@ -302,8 +306,10 @@ export function Feature() {
            Get in Touch
             </button>
           </div>
-        </div>
+        
       </div>
+    </div>
+     
     </div>
   );
 }

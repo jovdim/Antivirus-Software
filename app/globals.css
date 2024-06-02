@@ -4,26 +4,42 @@
 
 /* Underline Animation */
 .underline-animation {
-    position: relative;
-    text-decoration: none;
+  position: relative;
+  text-decoration: none;
+}
+
+.underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #1c45d9; /* Color of the underline */
+  transition: width 0.3s ease; /* Animation duration and easing */
+}
+
+.underline-animation:hover::after {
+  width: 100%; /* Fully underline on hover */
+}
+
+.underline-animation.active::after {
+  width: 100%; /* Fully underline when active */
+}
+
+.float {
+  position: relative;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
   }
-  
-  .underline-animation::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background-color: #3559E0; /* Color of the underline */
-    transition: width 0.3s ease; /* Animation duration and easing */
+  50% {
+    transform: translateY(-20px);
   }
-  
-  .underline-animation:hover::after {
-    width: 100%; /* Fully underline on hover */
+  100% {
+    transform: translateY(0);
   }
-  
-  .underline-animation.active::after {
-    width: 100%; /* Fully underline when active */
-  }
-  
+}

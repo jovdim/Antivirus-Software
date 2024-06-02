@@ -62,7 +62,7 @@ const Accordion = () => {
   ];
 
   return (
-    <div className="h-[130vh] w-[100vw]  bg-gradient-to-t to-[#3d66c7] from-[#336093cf] px-24 text-white">
+    <div id="faq" className="h-[130vh] w-[100vw]  bg-gradient-to-t to-[#3d66c7] from-[#336093cf] px-24 text-white">
       <div className="pt-10  flex flex-col  items-center space-y-6  ">
         <div className="">
           <div className="pb-12">

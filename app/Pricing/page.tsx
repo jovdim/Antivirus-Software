@@ -52,7 +52,7 @@ const pricingPlans = [
 ];
 export default function Pricing() {
   return (
-    <div className="  h-[110vh] w-[100vw] text-[18px]   bg-gradient-to-t to-[#3876BF] from-[#336093cf]  px-24">
+    <div id="pricing" className="  h-[110vh] w-[100vw] text-[18px]   bg-gradient-to-t to-[#3876BF] from-[#336093cf]  px-24">
       <div className="text-center text-white pt-8">
         <h1 className="font-bold text-[30px]">Pricing Options</h1>
         <p className="text-base">
